@@ -8,68 +8,233 @@
 </head>
 <body>
     <!-- INTEGRANTE 1: Header + Hero Section -->
-<header id="header">
-    <nav class="navbar">
-        <div class="container nav-container">
-            <div class="logo">
-                <h1>⚡ TechStore</h1>
+    <header id="header">
+        <nav class="navbar">
+            <div class="container nav-container">
+                <div class="logo">
+                    <h1>⚡ TechStore</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#hero">Inicio</a></li>
+                    <li><a href="#products">Productos</a></li>
+                    <li><a href="#deals">Ofertas</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="cart-btn">🛒 <span class="cart-count">0</span></button>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
-            <ul class="nav-menu">
-                <li><a href="#hero">Inicio</a></li>
-                <li><a href="#products">Productos</a></li>
-                <li><a href="#deals">Ofertas</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-            <div class="nav-actions">
-                <button class="cart-btn">🛒 <span class="cart-count">0</span></button>
-            </div>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
-</header>
+        </nav>
+    </header>
 
-<section id="hero">
-    <div class="hero-background">
-        <div class="grid-overlay"></div>
-        <div class="container hero-content">
-            <div class="hero-text">
-                <span class="hero-badge">🔥 Nuevas RTX 5000 Series Disponibles</span>
-                <h1 class="hero-title">Construye tu PC<br><span class="gradient-text">de Ensueño</span></h1>
-                <p class="hero-subtitle">Los mejores componentes para gaming, workstation y más. Envío gratis en pedidos +S/.500</p>
-                <div class="hero-buttons">
-                    <a href="#products" class="btn-primary">Explorar Productos</a>
-                    <a href="#deals" class="btn-secondary">Ver Ofertas</a>
+    <section id="hero">
+        <div class="hero-background">
+            <div class="grid-overlay"></div>
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <span class="hero-badge">🔥 Nuevas RTX 5000 Series Disponibles</span>
+                    <h1 class="hero-title">Construye tu PC<br><span class="gradient-text">de Ensueño</span></h1>
+                    <p class="hero-subtitle">Los mejores componentes para gaming, workstation y más. Envío gratis en pedidos +S/.500</p>
+                    <div class="hero-buttons">
+                        <a href="#products" class="btn-primary">Explorar Productos</a>
+                        <a href="#deals" class="btn-secondary">Ver Ofertas</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <h3>5000+</h3>
+                            <p>Productos</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>10K+</h3>
+                            <p>Clientes</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>24/7</h3>
+                            <p>Soporte</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="hero-stats">
-                    <div class="stat-item">
-                        <h3>5000+</h3>
-                        <p>Productos</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>10K+</h3>
-                        <p>Clientes</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>24/7</h3>
-                        <p>Soporte</p>
-                    </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1587202372634-32705e3bf49c?w=600" alt="PC Gaming">
+                    <div class="image-glow"></div>
                 </div>
-            </div>
-            <div class="hero-image">
-                <img src="https://images.unsplash.com/photo-1587202372634-32705e3bf49c?w=600" alt="PC Gaming">
-                <div class="image-glow"></div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- INTEGRANTE 2: Productos/Categorías Section -->
     <section id="products">
-        <!-- Aquí va el código del Integrante 2 -->
+        <div class="container">
+            <h2>Categorías Destacadas</h2>
+            <p class="section-subtitle">Encuentra los mejores componentes para tu setup</p>
+            
+            <div class="products-grid">
+                <!-- Tarjetas Gráficas -->
+                <div class="product-card">
+                    <div class="product-badge">HOT</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1591488320449-011701bb6704?w=400" alt="GPU">
+                        <div class="product-overlay">
+                            <button class="quick-view">Ver Detalles</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Tarjetas Gráficas</span>
+                        <h3>NVIDIA RTX 5090</h3>
+                        <p class="product-description">La GPU más potente del mercado. 24GB GDDR7, Ray Tracing de última generación</p>
+                        <div class="product-specs">
+                            <span>🎮 Gaming Extremo</span>
+                            <span>💻 24GB GDDR7</span>
+                        </div>
+                        <div class="product-footer">
+                            <div class="price-container">
+                                <span class="price">S/. 7,499</span>
+                                <span class="price-label">desde</span>
+                            </div>
+                            <button class="add-cart">Agregar 🛒</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Procesadores -->
+                <div class="product-card">
+                    <div class="product-badge new">NUEVO</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1555617981-dac3880eac6e?w=400" alt="CPU">
+                        <div class="product-overlay">
+                            <button class="quick-view">Ver Detalles</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Procesadores</span>
+                        <h3>Intel Core i9-14900KS</h3>
+                        <p class="product-description">24 núcleos, 32 hilos. Máximo rendimiento para gaming y creación de contenido</p>
+                        <div class="product-specs">
+                            <span>⚡ 6.2 GHz Turbo</span>
+                            <span>🔥 24 Núcleos</span>
+                        </div>
+                        <div class="product-footer">
+                            <div class="price-container">
+                                <span class="price">S/. 2,899</span>
+                                <span class="price-label">desde</span>
+                            </div>
+                            <button class="add-cart">Agregar 🛒</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Memorias RAM -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?w=400" alt="RAM">
+                        <div class="product-overlay">
+                            <button class="quick-view">Ver Detalles</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Memorias RAM</span>
+                        <h3>Corsair Vengeance RGB DDR5</h3>
+                        <p class="product-description">64GB (2x32GB) 6000MHz. Iluminación RGB personalizable</p>
+                        <div class="product-specs">
+                            <span>💡 RGB</span>
+                            <span>⚡ 6000MHz</span>
+                        </div>
+                        <div class="product-footer">
+                            <div class="price-container">
+                                <span class="price">S/. 1,299</span>
+                                <span class="price-label">desde</span>
+                            </div>
+                            <button class="add-cart">Agregar 🛒</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Almacenamiento SSD -->
+                <div class="product-card">
+                    <div class="product-badge">OFERTA</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?w=400" alt="SSD">
+                        <div class="product-overlay">
+                            <button class="quick-view">Ver Detalles</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Almacenamiento</span>
+                        <h3>Samsung 990 PRO NVMe</h3>
+                        <p class="product-description">2TB PCIe 4.0. Velocidades de hasta 7,450 MB/s</p>
+                        <div class="product-specs">
+                            <span>🚀 7450 MB/s</span>
+                            <span>💾 2TB</span>
+                        </div>
+                        <div class="product-footer">
+                            <div class="price-container">
+                                <span class="price">S/. 799</span>
+                                <span class="old-price">S/. 999</span>
+                            </div>
+                            <button class="add-cart">Agregar 🛒</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Placas Madre -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=400" alt="Motherboard">
+                        <div class="product-overlay">
+                            <button class="quick-view">Ver Detalles</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Placas Madre</span>
+                        <h3>ASUS ROG Maximus Z790</h3>
+                        <p class="product-description">Socket LGA1700, DDR5, PCIe 5.0. Para builds de alta gama</p>
+                        <div class="product-specs">
+                            <span>🎯 LGA1700</span>
+                            <span>⚡ DDR5 & PCIe 5.0</span>
+                        </div>
+                        <div class="product-footer">
+                            <div class="price-container">
+                                <span class="price">S/. 1,899</span>
+                                <span class="price-label">desde</span>
+                            </div>
+                            <button class="add-cart">Agregar 🛒</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fuentes de Poder -->
+                <div class="product-card">
+                    <div class="product-badge">80+ Gold</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400" alt="PSU">
+                        <div class="product-overlay">
+                            <button class="quick-view">Ver Detalles</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Fuentes de Poder</span>
+                        <h3>Corsair RM1000x 80+ Gold</h3>
+                        <p class="product-description">1000W Modular. Certificación 80 Plus Gold, ultra silenciosa</p>
+                        <div class="product-specs">
+                            <span>🔌 Modular</span>
+                            <span>⚡ 1000W</span>
+                        </div>
+                        <div class="product-footer">
+                            <div class="price-container">
+                                <span class="price">S/. 699</span>
+                                <span class="price-label">desde</span>
+                            </div>
+                            <button class="add-cart">Agregar 🛒</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- INTEGRANTE 3: Ofertas + Por qué elegirnos -->
