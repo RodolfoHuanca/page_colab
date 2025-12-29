@@ -587,3 +587,87 @@ h2 {
         grid-template-columns: 1fr;
     }
 }
+
+
+/* INTEGRANTE 2 - EFECTOS Y ANIMACIONES */
+
+.product-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary-cyan);
+    box-shadow: 0 15px 40px rgba(0, 217, 255, 0.2);
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.1);
+}
+
+.product-card:hover .product-overlay {
+    opacity: 1;
+}
+
+.product-card:hover .quick-view {
+    transform: translateY(0);
+}
+
+.add-cart:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(0, 217, 255, 0.4);
+}
+
+.add-cart:active {
+    transform: translateY(0);
+}
+
+/* Animación de entrada para las cards */
+.product-card {
+    animation: fadeInUp 0.6s ease-out forwards;
+    opacity: 0;
+}
+
+.product-card:nth-child(1) { animation-delay: 0.1s; }
+.product-card:nth-child(2) { animation-delay: 0.2s; }
+.product-card:nth-child(3) { animation-delay: 0.3s; }
+.product-card:nth-child(4) { animation-delay: 0.4s; }
+.product-card:nth-child(5) { animation-delay: 0.5s; }
+.product-card:nth-child(6) { animation-delay: 0.6s; }
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Efecto de brillo en el badge */
+.product-badge {
+    animation: badgePulse 2s ease-in-out infinite;
+}
+
+@keyframes badgePulse {
+    0%, 100% {
+        box-shadow: 0 0 0 0 rgba(255, 107, 53, 0.7);
+    }
+    50% {
+        box-shadow: 0 0 0 10px rgba(255, 107, 53, 0);
+    }
+}
+
+/* Responsive adicional */
+@media (max-width: 568px) {
+    .product-info h3 {
+        font-size: 1.2rem;
+    }
+    
+    .product-footer {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .add-cart {
+        width: 100%;
+    }
+}
